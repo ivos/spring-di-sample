@@ -1,4 +1,4 @@
-package com.github.ivos.springdi;
+package com.github.ivos.springdi.service;
 
 import org.springframework.stereotype.Service;
 
