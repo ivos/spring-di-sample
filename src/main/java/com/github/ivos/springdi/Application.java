@@ -3,6 +3,7 @@ package com.github.ivos.springdi;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.github.ivos.springdi.ambiguous.AmbiguousInjection;
 import com.github.ivos.springdi.service.MessagePrinter;
 
 public class Application {
@@ -27,6 +28,7 @@ public class Application {
 		for (int i = 0; i < runCount; i++) {
 			printer.printMessage();
 		}
+		System.out.println("Party name " + context.getBean(AmbiguousInjection.class).getPartyName());
 	}
 
 }
